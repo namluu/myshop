@@ -6,5 +6,36 @@
                 <argument name="logo_file" xsi:type="string">Magento_Theme/images/logo.jpg</argument>
             </action>
         </referenceBlock>
+        <referenceBlock name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" before="-">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">contact-links list-inline float-left</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="a">
+                    <arguments>
+                        <argument name="path" xsi:type="string">outshops</argument>
+                        <argument name="label" xsi:type="string" translate="true">Our shops</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="b">
+                    <arguments>
+                        <argument name="path" xsi:type="string">sales/guest/invoice</argument>
+                        <argument name="label" xsi:type="string" translate="true">Call us: 1900 1800</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="c">
+                    <arguments>
+                        <argument name="path" xsi:type="string">sales/guest/invoice</argument>
+                        <argument name="label" xsi:type="string" translate="true">Live support</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="d">
+                    <arguments>
+                        <argument name="path" xsi:type="string">sales/guest/invoice</argument>
+                        <argument name="label" xsi:type="string" translate="true">FAQ</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
     </body>
 </page>
