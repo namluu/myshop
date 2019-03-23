@@ -76,3 +76,5 @@ setup
 update
 var
 vendor
+conposer.json
+composer.lock
